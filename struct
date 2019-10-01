@@ -1,0 +1,10 @@
+NESTED STRUCTURE APPLICATION IN C 
+
+Structure is a user-defined datatype in C language which allows us to combine data of different types together.
+Structure helps to construct a complex data type which is more meaningful. 
+
+C provides us the feature of nesting one structure within another structure by using which, complex data types
+are created. For example, we may need to store the address of an entity employee in a structure. The attribute 
+address may also have the subparts as street number, city, state, and pin code. Hence, to store the address of
+the employee, we need to store the address of the employee into a separate structure and nest the structure 
+address into the structure employee.
