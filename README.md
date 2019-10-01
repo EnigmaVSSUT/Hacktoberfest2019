@@ -1,3 +1,4 @@
+
 SOLVING FIBONACCI SERIES USING RECURSION.
 
 The Fibonacci sequence is a set of numbers that starts with a 1 or a 0, followed by a one, and proceeds based on the rule that each number
@@ -8,6 +9,4 @@ What is Recursion?
 The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called as recursive function.
 Using recursive algorithm, certain problems can be solved quite easily. 
 Examples of such problems are Towers of Hanoi (TOH), Inorder/Preorder/Postorder Tree Traversals, DFS of Graph, etc.
-
-
 
