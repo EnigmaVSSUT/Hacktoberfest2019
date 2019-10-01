@@ -1,8 +1,7 @@
-# Hacktoberfest2019
-Get a free Tee, dive into open source and get hacking ! &lt;3
+SOLVING QUADRATIC EQUATION
 
-Add any relevant algorithm, script or a cool code snippet in your preferred language to this repo. Make a PR and then add your name to the Contributors.md file in the followng format: 
 
-[Your_User_name](github url)
+A quadratic equation is an equation of the second degree, meaning it contains at least one term that is squared.
 
-Start your october with a bang ! 
+The standard form is ax² + bx + c = 0 with a, b, and c being constants, or numerical coefficients,and x is an unknown variable. 
+One absolute rule is that the first constant "a" cannot be a zero.
