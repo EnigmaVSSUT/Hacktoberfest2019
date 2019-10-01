@@ -1,0 +1,1 @@
+This is a simple color game,for beginners to learn javascript.
