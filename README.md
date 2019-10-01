@@ -5,4 +5,4 @@ Add any relevant algorithm, script or a cool code snippet to this repo. Make a P
 
 [Your_User_name](github url)
 
-Start your ovtober with a bang ! 
+Start your october with a bang ! 
