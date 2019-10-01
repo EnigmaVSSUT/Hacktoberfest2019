@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="750308248587-iavr9d67vur1g3bs66c9ag2v7cbvi2qo.apps.googleusercontent.com">
+    <title>Welcome to Enigma</title>
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase.js"></script>
+    <!-- Google Sign in -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    
+    <script src="./myscript.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./frontpage.css">
+
+  
+
+
+
+    <script>
+      // Initialize Firebase
+      // TODO: Replace with your project's customized code snippet
+      var firebaseConfig = {
+        apiKey: "AIzaSyD9PHYtbLP3qrHMKsW7H-13oyyBxbV5eJA",
+        authDomain: "enigma-or.firebaseapp.com",
+        databaseURL: "https://enigma-or.firebaseio.com",
+        projectId: "enigma-or",
+        storageBucket: "",
+        messagingSenderId: "750308248587",
+        appId: "1:750308248587:web:79b32f294451de0ad38b0e"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+
+    
+  </head>
+  <body class="w3-black">
+    <div class="w3-padding-large" id="main">
+
+          <div id="welcome"  style="display: none" ><span style="color: rgb(16, 170, 16) " >Welcome</span><br></div>
+   
+           <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+           <h1 class="w3-xxxlarge"><span class="w3-hide-small"></span>We are the</h1>
+           <h1 class="w3-jumbo" id="en" ><span style="color: rgb(17, 170, 17);  font-size: 105% ">E</span>NIGMA</h1>
+           
+           <img src="./logo.png" alt="Enigma - The power of code" class="w3-image" width="500" height="560" style="transform: translateY(-10%)" >
+           <p id="timerhead"  >Orientation starts in : </p>
+           <p id="timer"></p>
+
+
+           <center><div class="gsign" id="signin" ><div class="g-signin2" data-onsuccess="onSignIn"></div></div></center>
+           <center> <div id="aftersignin" style="display: none"  ><button  id="next" onclick="riddle()" ><b> next </b></button></div> </center>
+         </header>
+
+   </div>
+
+   <script>
+   document.body.style.overflow = 'hidden';
+   </script>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Sep 20, 2019 16:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("timer").innerHTML = days + "d  " + hours + "h  "
+      + minutes + "m  " + seconds + "s  ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "TIME SHOULD BE UPDATED IN THE CODE";
+      }
+    }, 1000);
+    </script>
+   
+  </body>
+</html>
