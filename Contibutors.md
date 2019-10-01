@@ -5,4 +5,5 @@
 5. [ shubhang237 ] ( https://github.com/shubhang237 )
 6. * [Charlye](https://github.com/costassolla)
 7. [ Medulla9991 ]  ( https://github.com/Medulla9991 )
-8. [Pointdexter99](https://github.com/Pointdexter99)
+8. [Chris Chung](https://github.com/maxutil)
+9  [Pointdexter99](https://github.com/Pointdexter99)
