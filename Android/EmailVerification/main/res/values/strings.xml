@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EmailVerify</string>
+    <string name="em">Email Id</string>
+    <string name="ps">Password</string>
+    <string name="lin">Log In</string>
+    <string name="rgs">Register</string>
+    <string name="sup">Sign Up</string>
+    <string name="fname">Full Name</string>
+    <string name="fpass">Forgot Password?</string>
+    <string name="areg">Already Registered? Log In Here</string>
+</resources>
