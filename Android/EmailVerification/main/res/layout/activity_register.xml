@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dell.emailverify.Register">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create An Account"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/com_facebook_button_send_background_color"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/r_FullName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/fname"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/email_back"/>
+        <EditText
+            android:id="@+id/r_Email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="@string/em"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/email_back"/>
+        <EditText
+            android:id="@+id/r_PassWord"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password   (min. 6 chars)"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/email_back"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/r_SignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sup"
+            android:textColor="@android:color/white"
+            style="@style/com_facebook_loginview_silver_style"
+            android:background="#17A589"/>
+        <TextView
+            android:id="@+id/r_AReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:text="@string/areg"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+
+</LinearLayout>

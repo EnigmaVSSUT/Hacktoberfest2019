@@ -1,0 +1,51 @@
+
+
+Okular
+Xampp
+
+
+
+
+
+
+
+Direct Files
+
+
+
+
+
+
+
+installed
+1. Dictionary i)dictd : sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) universe"
+                        sudo apt-get install dict
+                        sudo apt-get install dictd
+                        sudo apt-get install dict-gcide
+                        sudo apt-get install dict-wn
+                        sudo apt-get install dict-devil
+                        sudo apt-get install dict-moby-thesaurus
+                        sudo apt-get install gnome-dictionary
+               ii)ARTHA:  sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) universe"
+                          sudo apt-get install artha
+               iii) GoldenDictionary: sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) universe"
+                                      sudo apt-get install goldendict
+
+                              
+GIMP
+git
+chrome
+java
+g++
+gcc
+python
+python3
+VSCODE
+VLC 
+Android Studio
+
+
+
+
+VSCODE Extensions
+live server

@@ -1,15 +1,16 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 Created on Tue Sep  4 22:40:23 2018
-
 @author: rockngsho
 """
-
 import random
 movies = ['interstellar', 'matrix', 'avengers', 'x men', 'batman', 'inception', 'shutter island', 'the prestige', 'incredibles', 'mad max fury road', 'justice league']
 
 def create_question(movie):
+    '''
+    This will create question from movie name
+    @param movie(str) : Name of the movie
+    @return (str)     : Question 
+    '''
     n=len(movie)
     letters=list(movie)
     temp=[]
@@ -22,17 +23,31 @@ def create_question(movie):
     return qn
 
 def is_present(letter,movie):
+    '''
+    Search for the letter in the movie name
+    @param letter(char) : Letter to be searched
+    @param movie(str)   : Movie name in which to be searched for
+    @return(bool)       : Present or not
+    '''
     c=movie.count(letter)
     if c==0:
         return False
     else:
         return True
-    
+
 def unlock(qn,movie,letter):
+    '''
+    This will revail the movie name
+    @param qn(str)      : Question string
+    @param movie(str)   : Actual movie name
+    @param letter(char) : Letter said by the player
+    @return(str)        : New question with added char
+    '''
     ref=list(movie)
     qn_list=list(qn)
     n=len(movie)
     temp=[];
+    temp=[]
     for i in range(n):
         if ref[i]==letter:
             temp.append(letter)
@@ -42,6 +57,11 @@ def unlock(qn,movie,letter):
     return qn_new
 
 def play():
+    '''
+    Kind of encapsulate all the functions to start the game
+    @param  : None
+    @return : None
+    '''
     p1name=input("player 1 please enter your name:")
     p2name=input("player 2 please enter your name:")
     pp1=0
@@ -114,6 +134,4 @@ def play():
                 print("thank you!!!!")
                 break
         turn=turn+1
-
-
 play()
