@@ -6,4 +6,5 @@
 6. * [Charlye](https://github.com/costassolla)
 7. [ Medulla9991 ]  ( https://github.com/Medulla9991 )
 8. [Chris Chung](https://github.com/maxutil)
-9  [Pointdexter99](https://github.com/Pointdexter99)
+9  [Pointdexter99](https://github.com/Pointdexter99) 
+10. [AutumnEquinox] (https://github.com/AutumnEquinox)
