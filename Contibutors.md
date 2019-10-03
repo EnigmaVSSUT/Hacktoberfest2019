@@ -8,3 +8,7 @@
 8. [Chris Chung](https://github.com/maxutil)
 9  [Pointdexter99](https://github.com/Pointdexter99) 
 10. [AutumnEquinox] (https://github.com/AutumnEquinox)
+11. [i-tick] (https://github.com/i-tick)
+12. [Arkistos] (https://github.com/Arkistos)
+13. [nitindhemiwal](https://github.com/nitindhemiwal)
+
