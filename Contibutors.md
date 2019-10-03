@@ -8,3 +8,4 @@
 8. [Chris Chung](https://github.com/maxutil)
 9  [Pointdexter99](https://github.com/Pointdexter99)
 10. [nitindhemiwal](https://github.com/nitindhemiwal)
+11. [i-tick] (https://github.com/i-tick)
