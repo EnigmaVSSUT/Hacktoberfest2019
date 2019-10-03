@@ -1,19 +1,39 @@
-/** O(n^2) */
-fun bubble_sort(list: MutableList<String>) {
-    val size = list.size
+#include <stdio.h>
 
-    for (x in 0 until size) {
-        for (y in x + 1 until size) {
-            println("\tx=$x, y=$y")
-            if (list[y] < list[x]) {
-                list.swap(y, x)
-            }
-        }
-    }
+long linear_search(long [], long, long);
+
+int main()
+{
+   long array[100], search, c, n, position;
+
+   printf("Input number of elements in array\n");
+   scanf("%ld", &n);
+
+   printf("Input %d numbers\n", n);
+
+   for (c = 0; c < n; c++)
+      scanf("%ld", &array[c]);
+
+   printf("Input a number to search\n");
+   scanf("%ld", &search);
+
+   position = linear_search(array, n, search);
+
+   if (position == -1)
+      printf("%d isn't present in the array.\n", search);
+   else
+      printf("%d is present at location %d.\n", search, position+1);
+
+   return 0;
 }
 
-fun <T> MutableList<T>.swap(index1: Int, index2: Int) {
-    val tmp = this[index1] // 'this' corresponds to the list
-    this[index1] = this[index2]
-    this[index2] = tmp
+long linear_search(long a[], long n, long find) {
+   long c;
+
+   for (c = 0 ;c < n ; c++ ) {
+      if (a[c] == find)
+         return c;
+   }
+
+   return -1;
 }
