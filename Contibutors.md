@@ -9,3 +9,4 @@
 9  [Pointdexter99](https://github.com/Pointdexter99)
 10. [nitindhemiwal](https://github.com/nitindhemiwal)
 11. [i-tick] (https://github.com/i-tick)
+12. [Arkistos] (https://github.com/Arkistos)
