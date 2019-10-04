@@ -119,4 +119,5 @@ cd ~
 				  stop
 				  restart
 65. using dictionary dictd :  dict -d wn "dictionary"
+67. alias : create an alias to make easier the use of complexes commands. Example of use: alias "name_of_alias":"command"
 
