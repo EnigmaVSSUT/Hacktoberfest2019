@@ -1,0 +1,2 @@
+python writer.py
+python check.py | sudo tee /var/www/html/index.html # insert the location of you braodcast page here
