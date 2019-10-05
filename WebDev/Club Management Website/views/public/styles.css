@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+.gallery-wrap {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 70vh;
+}
+
+.item {
+	flex: 1;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	transition: flex 0.8s ease;
+}
+
+.item:hover {
+	flex: 7;
+}
+
+.item-1 {
+	background-image: url("https://images.unsplash.com/photo-1499198116522-4a6235013d63?auto=format&fit=crop&w=1233&q=80");
+}
+
+.item-2 {
+	background-image: url("https://images.unsplash.com/photo-1492760864391-753aaae87234?auto=format&fit=crop&w=1336&q=80");
+}
+
+.item-3 {
+	background-image: url("https://images.unsplash.com/photo-1503631285924-e1544dce8b28?auto=format&fit=crop&w=1234&q=80");
+}
+
+.item-4 {
+	background-image: url("https://images.unsplash.com/photo-1510425463958-dcced28da480?auto=format&fit=crop&w=1352&q=80");
+}
+
+.item-5 {
+	background-image: url("https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1234&q=80");
+}
+
+
+/* Footer */
+.footer {
+	margin-top: 10px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background: #212121;
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer li:nth-of-type(n+2) {
+	margin-left: 8px;
+}
+
+.footer a {
+	font-size: 18px;
+	color: rgba(255, 255, 255, 0.5);
+	transition: color .235s ease-in-out;
+}
+
+.footer a:focus,
+.footer a:hover {
+	color: rgba(255, 255, 255, 0.25);
+}
+
+/**
+SVG
+*/
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+  }
+  /* on the svg element set up a default value for the --stroke-dash and --stroke-dash-negative attributes
+  46 roughly being the length of the longest path.air
+  */
+  body > svg {
+	width: 600px;
+	height: auto;
+	--stroke-dash: 46;
+	--stroke-dash-negative: -46;
+  }
+  /* animate the car to move slightly forwards and backwards */
+  g#car {
+	transform: translateX(-3px);
+	animation: translate 2s ease-in-out infinite;
+  }
+  /* animate the shadow to skew  toward the left */
+  path#shadow {
+	animation: skew 2s ease-in-out infinite;
+  }
+  /* animate the wheels to spin  clockwise*/
+  g.wheels use {
+	animation: rotate 2s linear infinite;
+  }
+  /* animate the dashes of air to briefly show them and then hide them from view */
+  path.air {
+	/* starting from the values described by the --stroke-dash property
+	! the property is updated for each path in the script
+	*/
+	stroke-dasharray: var(--stroke-dash);
+	stroke-dashoffset: var(--stroke-dash);
+	/* ! the delay of the animation is also set up in the script  */
+	animation: offset 2s linear infinite;
+	/* opacity to hide the obnoxious dots otherwise shown on firefox and edge */
+	opacity: 0;
+  }
+  
+  /* keyframe animations
+  ! be sure to have the animations overlap as to show a realistic behavior
+  - as the car moves right the wheels spin faster, the shadow skews left, the dashes of air appear in sequence
+  - as the car moves left the wheels spin slower while the shadow returns to its resting place
+  */
+  @keyframes translate {
+	50% {
+	  transform: translateX(3px);
+	}
+	100% {
+	  transform: translateX(-3px);
+	}
+  }
+  @keyframes skew {
+	50% {
+	  transform: skewX(-20deg);
+	}
+  }
+  @keyframes rotate {
+	50% {
+	  transform: rotate(4turn);
+	}
+	100% {
+	  transform: rotate(6turn);
+	}
+  }
+  
+  /* beside animating the stroke-dashoffset property rapidly change the opacity to show the dashes and hide them when they are removed by changing the offset property
+  otherwise the dashes would still be partially visible on firefox and edge (at least)
+  */
+  @keyframes offset {
+	1% {
+	  opacity: 1;
+	}
+	15% {
+	  stroke-dashoffset: 0;
+	  opacity: 1;
+	}
+	24% {
+	  opacity: 1;
+	}
+	25% {
+	  opacity: 0;
+	  /* ! on chrome and firefox the calc() function allows to compute the negative value, but Edge seems to prefer having another variable instead */
+	  /* stroke-dashoffset: calc(var(--stroke-dash) * -1px); */
+	  stroke-dashoffset: var(--stroke-dash-negative);
+	}
+	100% {
+	  stroke-dashoffset: var(--stroke-dash-negative);
+	}
+  }
+  #mainJumbotron{
+	background-image: url('https://images.unsplash.com/photo-1499198116522-4a6235013d63');
+  }
