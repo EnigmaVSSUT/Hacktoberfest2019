@@ -5,6 +5,6 @@ Add any relevant algorithm, script or a cool code snippet in your preferred lang
 Start your october with a bang ! 
 https://enigmavssut.github.io/Hacktoberfest2019/
 
-<h1>NOTE</h1>
-please push your PR's into your concerned Folders in the Repository.
-Help Us keep the Repo clean. Keep Coding!
+<h4>NOTE</h4>
+please push your PR's into your concerned Folders in the Repository.<br>
+Help Us keep the Repo clean.<br> Keep Coding!
