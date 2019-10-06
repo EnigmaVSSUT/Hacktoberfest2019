@@ -5,6 +5,9 @@ Ubuntu general:
 Teminal:
 	ctrl+shift+c: copy
 	ctrl+shift+v: Paste
+Bang Commands:
+	!!* : use arguments from previous command
+	!!: Repeat last command
 
 
 
