@@ -122,3 +122,8 @@ cd ~
 65. using dictionary dictd :  dict -d wn "dictionary"
 67. alias : create an alias to make easier the use of complexes commands. Example of use: alias "name_of_alias":"command"
 
+Search for a text in a file 
+68. grep - used to search for a string in a file. grep "String to check"  pathtofile/filename.extension
+69. zgrep - used to search for a sting in a zip file containing documents. zgrep "String to check"  pathtofile/filename.extension
+70. cat - used to display a text file in teminal - cat pathtofile/filename.extension
+71. less - used to display a text file in teminal along with features like scrolling from top to bottom of text and search for a string. less pathtofile/filename.extension
