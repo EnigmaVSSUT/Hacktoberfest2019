@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<title>Papo Reto</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="C. Magno Nascimento">
+<script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='./css/style.css') }}">
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='./images/icon.png') }}">
+</head>
+<body>
+<script type="text/javascript" charset="utf-8">
+const socket = io();
+
+socket.on('connect', () => {
+	socket.emit('connected', {'nickname':document.getElementById('nickname-input').value}, (data) => {
+	});
+});
+
+socket.on('server_message', (data) => {
+	let e = document.createElement('p');
+	let sp = document.createElement('span');
+	sp.innerHTML = data.nickname;
+	e.appendChild(sp);
+	e.innerHTML = e.innerHTML+'>> '+data.message;
+
+	if(document.getElementById('message-box').children.length>20){
+		document.getElementById('message-box').removeChild(document.getElementById('message-box').children[0]);
+	}
+
+	document.getElementById('message-box').appendChild(e);
+
+	
+	document.getElementById('message-box').scroll(0, document.getElementById('message-box').scrollHeight);
+});
+
+function htmlEntities(str) {
+    return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function sendMessage(){
+	socket.emit('client_message', {'nickname': htmlEntities(document.getElementById('nickname-input').value), 'message':  htmlEntities(document.getElementById('message-input').value)});
+	document.getElementById('message-input').value = '';
+}
+
+function isPressingEnter(e){
+	let k;
+	if(window.event){
+		k = e.keyCode;
+		if(k===13){
+			sendMessage();
+		}
+	}else if(e.which){
+		k = e.which;
+		if(k===13){
+			sendMessage();
+		}
+	}
+}
+
+</script>
+<h1 id="title">Papo Reto</h1>
+<section id="chat-box">
+	<section id="message-box">
+	</section>
+	
+	<section id="input-box">
+		<input type="text" autofocus onkeypress="return isPressingEnter(event)" required placeholder="Digite sua mensagem aqui" id="message-input">
+		<button type="button" id="send-button" onclick="sendMessage()" >>></button> 
+	</section>
+</section>
+
+<section id="nickname-box">
+	<label id="nickname-label" for="nickname-input">Nickname: </label>
+	<input type="text" id="nickname-input" autocomplete="off" value="Guest">
+</section>
+
+</body>
+</html>
