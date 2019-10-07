@@ -17,3 +17,7 @@ The javascript file (.js) can be viewed in _dir_ 'js' or [here](js/stack.js)
 A basic CSS stylesheet is added to this project, that can be edited/viewed [here](css/master.css)
 
 <hr />
+
+Any suggestion will be highly appreciated!!
+
+_Regr. [Ravi Prakash](https://github.com/ravi-prakash1907)_
