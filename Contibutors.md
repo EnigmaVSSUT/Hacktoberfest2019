@@ -30,7 +30,7 @@
 30. [kshntn](https://github.com/kshntn)
 31. [Ravi Prakash](https://github.com/ravi-prakash1907)
 32. [citaUtec](https://github.com/citaUtec)
-33. [Kuljeet Singh] (https://github.com/Kuljeet-123)
+33. [Kuljeet Singh](https://github.com/Kuljeet-123)
 34. [rimjhim167](https://github.com/rimjhim167)
 35. [Melissagnzx](https://github.com/melissagnzx)
 36. [lakshyajit165](https://github.com/lakshyajit165)
@@ -44,3 +44,4 @@
 44. [leehmaciel](https://github.com/leehmaciel)
 45. [Nikhil](https://github.com/NikhilAgrawal3012)
 46. [oscar-dev19](https://github.com/oscar-dev19)
+47. [PeteChu](https://github.com/petechu)
