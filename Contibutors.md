@@ -46,4 +46,5 @@
 46. [oscar-dev19](https://github.com/oscar-dev19)
 47. [apoorvam25](https://github.com/apoorvam25)
 48. [PeteChu](https://github.com/petechu)
-49. [cslv](https://github.com/cslv)
+49. [Suvojit Barick](https://github.com/SuvojitBarick)
+50. [cslv](https://github.com/cslv)
