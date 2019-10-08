@@ -58,3 +58,4 @@
 58. [Shubham Verma](https://github.com/shubhamvrm)
 59. [115upm](https://github.com/115upm)
 60. [Dhruv](https://github.com/QuodIntrepidus)
+61. [Yash Thakkar](https://github.com/yashthakkar1173)
