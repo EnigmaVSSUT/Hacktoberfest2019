@@ -64,3 +64,5 @@
 64. [Ilia Smith] (https://github.com/iliasmith)
 65. [MKulmie02](https://github.com/MKulmie02)
 66. [anu-shree](https://github.com/anu-shree)
+67. [trunc8](https://github.com/trunc8)
+
