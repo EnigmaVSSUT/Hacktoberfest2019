@@ -1,5 +1,5 @@
 import random
-
+#Linear Search algorithm
 def linear_search(arr, x):
     for index in range(0,len(arr)):
         if arr[index] == x:
