@@ -59,3 +59,4 @@
 59. [115upm](https://github.com/115upm)
 60. [Dhruv](https://github.com/QuodIntrepidus)
 61. [Yash Thakkar](https://github.com/yashthakkar1173)
+62. [trunc8](https://github.com/trunc8)
