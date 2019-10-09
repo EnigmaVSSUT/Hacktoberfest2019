@@ -65,4 +65,5 @@
 65. [MKulmie02](https://github.com/MKulmie02)
 66. [anu-shree](https://github.com/anu-shree)
 67. [trunc8](https://github.com/trunc8)
-68. [q0r3y](https://github.com/q0r3y)
+68. [K.G.Santosh](https://github.com/santhoshkrishna770)
+69. [q0r3y](https://github.com/q0r3y)
