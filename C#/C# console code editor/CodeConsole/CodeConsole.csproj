@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProjectGuid>{2A27FDE2-E014-480D-950E-55925D33BB34}</ProjectGuid>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>FluentConsole</PackageId>
+    <Authors>F1uctus</Authors>
+    <Company>F1uctus Technologies</Company>
+    <Product>CodeConsole</Product>
+    <Description>Embeddable .NET standard console code editor.</Description>
+    <RootNamespace>CodeConsole</RootNamespace>
+  </PropertyGroup>
+
+</Project>
