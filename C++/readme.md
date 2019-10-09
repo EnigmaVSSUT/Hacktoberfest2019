@@ -1,2 +1,2 @@
-Compile: g++ filename.cpp
-Run :    ./a.out
+Compile: <b>g++ filename.cpp</b><br>
+Run :    <b>./a.out</b>
