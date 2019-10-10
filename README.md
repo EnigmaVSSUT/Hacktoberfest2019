@@ -8,7 +8,7 @@ https://enigmavssut.github.io/Hacktoberfest2019/
 
 <h2>NOTE</h2>
 please push your PR's into your concerned Folders in the Repository.<br>
-Help Us keep the Repo clean.<br> <b>Keep Coding!<b>
+Help Us keep the Repo clean.<br> 
 
 Please follow the following guidelines before contributing:
 1. Fork this repository and make your own branch.
@@ -16,4 +16,6 @@ Please follow the following guidelines before contributing:
 3. PRs made which shows it is done only for quick contributions and lies outside the guidelines of HacktoberFest 2019 will not be accepted.
 
 
-Keep Coding. (Y)
+Please note that PRs made for adding yourself to list of contributors.md and your contribution must be same and should not be 2 different PRs.Otherwise it will not be accepted and it may be marked as invalid.
+
+<b>Keep Coding!<b>
