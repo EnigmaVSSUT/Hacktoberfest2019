@@ -1,0 +1,13 @@
+div {
+    padding: 16px;
+  }  
+      form {                                         
+          margin: 0 auto; 
+          width: 600px; 
+      }
+      input[type=text], input[type=password] {
+      font-weight: bold ; 
+      text-align: left;  
+      font-family:sans-serif,bold, Arial, Helvetica; 
+      font-size:14px; 
+  }
