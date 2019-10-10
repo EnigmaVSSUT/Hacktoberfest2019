@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Button fx:id="btn" layoutX="118.0" layoutY="230.0" mnemonicParsing="false" onAction="#btnlogin" prefHeight="25.0" prefWidth="60.0" text="Login" />
+      <TextField fx:id="user" layoutX="89.0" layoutY="119.0" promptText="Username" />
+      <PasswordField fx:id="pwd" layoutX="89.0" layoutY="176.0" promptText="Password" />
+      <Label fx:id="stt" layoutX="113.0" layoutY="61.0" text="Welcome">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="75.0" fitWidth="60.0" layoutX="9.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/icon-ios7-contact-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="45.0" layoutX="17.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/icons8-key-416.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <Glow />
+   </effect>
+</AnchorPane>
