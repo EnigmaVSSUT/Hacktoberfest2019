@@ -46,7 +46,8 @@ bool searchTrie(char* str){
 }
 
 void init(){
-	nextFree=0;	
+	nextFree=0;
+	root=getNode();	
 }
 
 int main() {
