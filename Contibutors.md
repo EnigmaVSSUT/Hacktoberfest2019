@@ -69,4 +69,5 @@
 69. [q0r3y](https://github.com/q0r3y)
 70. [aayushsaini1](https://github.com/aayushsaini1)
 71. [NirvashPrime](https://github.com/NirvashPrime)
-72. [Anshul Bhatia](https://github.com/anshul-bhatia)
+72. [Manas Bichoo](https://github.com/manasbichoo)
+73. [Anshul Bhatia](https://github.com/anshul-bhatia)
