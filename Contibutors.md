@@ -73,4 +73,4 @@
 73. [Anshul Bhatia](https://github.com/anshul-bhatia)
 74. [Eduardonunes5](https://github.com/eduardonunes5)
 75. [Utkarsh Agnihotri](https://github.com/utkhagni13)
-75. [Uzair Korai](https://github.com/uzairkorai)
+76. [Uzair Korai](https://github.com/uzairkorai)
