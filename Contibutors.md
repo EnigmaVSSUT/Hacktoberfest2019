@@ -73,6 +73,7 @@
 73. [Anshul Bhatia](https://github.com/anshul-bhatia)
 74. [Eduardonunes5](https://github.com/eduardonunes5)
 75. [Utkarsh Agnihotri](https://github.com/utkhagni13)
-76. [Jai Janyani](https://github.com/JAIJANAYANI)
+76. [Kartikay Bansal](https://github.com/KartikayB)
+77. [Jai Janyani](https://github.com/JAIJANAYANI)
 77. [Manvi](https://github.com/The-lady-developer)
 78. [NimeshaWeerasinghe](https://github.com/NimeshaWeerasinghe)
