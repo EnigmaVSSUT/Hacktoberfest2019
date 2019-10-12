@@ -1,0 +1,26 @@
+<html>
+<head>
+    
+    <title>To do list </title>
+</head>
+<body>
+    <input />
+    <button onclick="a()">Add a new to-do</button>
+    <p></p>
+    <script>
+        var arr = [];
+        var input = document.querySelector("input");
+        var p = document.querySelector("p");
+        function a(){
+            var s = "";
+            arr.push(input.value);
+            input.value = "";
+            for(var i=0; i<arr.length; i++){
+                s = s + arr[i] + "<br/>";
+            }
+            p.innerHTML = s;
+            // s = "hello<br/>world<br/>"
+        }
+    </script>
+</body>
+</html>
