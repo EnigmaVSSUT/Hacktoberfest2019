@@ -1,0 +1,9 @@
+ Understanding the Data with Visualization
+
+ A) Univariate plots
+     In this section we will look at 3 techniques
+     that you can use to understand each attribute of your dataset independently
+
+     1) Univariate Histogram Plot  ( Data dist
+     2) Univariate Density plot    ( same pattern is also dipicted_)
+     3) Univariate box & whisker plot (box plot)   (50 percentile that is outliers)
