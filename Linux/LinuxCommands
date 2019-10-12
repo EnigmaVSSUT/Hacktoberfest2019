@@ -1,0 +1,130 @@
+1.df -Th : No of Partitions/My Computer of Linux
+2.cd - change directory, md - make directory
+3. ls- list (ls -a: all files(show hidden files))
+4. pwd- present working directory
+5.man -manual
+6. clear / ctrl+l: clear terminal
+7. cat: read a file
+8. mkdir: make directory
+9. su -i :   change to root user
+10. su - "username" : change current user
+11. useradd 
+12. ctrl+ d/logout/exit: logout
+13. DONOT USE: rm -rvf /
+14. touch : create a new file if the file is non-existing or update the timestamp if the file already exists
+15.vi/vim for redhat and nano for debian: edit files
+16.systemctl status/stop/start "sshd"- check status/start/stop of sshd service
+17. wall-  broadcast message to all logged in users
+18.In WIndows to Restart wireless network :ncpa.ctl
+19.w: list of all loggedin users 
+20. ps: get my processes/machine number...
+ps -aux
+21.ifup ens33 and ifdown ens33 : to connect/disconnect system to network
+22. wc: word count
+23. free /free -h: get ram status
+24. ssh vssut@10.208.34.9
+25. command |ps wc -l : count no of things in a list	
+26. top : view your system’s resource usage and see the processes that are taking up the most system resources. It displays a list of processes, with the ones using the most CPU .
+27. VIM COMMANDS
+	 get out of vi : esc-> :q or :q!(forcefully quit)
+	 insert in vim : press i
+ 	 w: write 
+ 	 wq: save and exit
+	:set nu : show line numbers (lines nos will be displayed)
+	?"text" : search a particular text in the file
+	:%s/"oldtext"/"newtext" : search and replace all
+28.head -n "10" "filename": display first 10 lines 
+29.tail -n "10" "filename" : display last 10 lines
+30.more/less "filename": display first 10 lines and press enter to show next line
+31. head -n 50| tail -n 15 : display line 35 to 50  (1st find first 50 lines and then show last 15 lines of that first 50 line)
+32.tar -zxvf "filename" - extract archive files (zxvf-> z:gzip,x:extract,v:verbose,f:bzip2)
+unzip file.zip - extract the files from zip
+33.cp "vss.txt" "/home/msatul1305/Desktop" -v : copy from current directory to new directory -v=>verbose(show copied acknowldgement)
+34. "." : current directory
+35. ".." : parent directory
+36.cp -r : copy a folder (recursive)
+37. rm : remove/delete file
+38. mv : move-It renames if you move it to same dir(used to rename files)
+39. du : disk utilisation (du -sh "foldername")
+	-h: human readable form
+40./proc/cpuinfo (or) lscpu : get no of processors /cores
+41. yum -y update: update  
+42. kill "PID" :killl a process using its pid
+43. pkill/killall "pname"- kill using process name
+44. : Check if a program has used openmp directives
+45. history : list of all used commands [History of commands used through the terminal] 
+46.chmod 777 file/folder_name : give full permissions to the file for all 3 types of users [admin user and others]
+	chmod -R 777 /foldername :  give full access to a folder and all its subfolders.
+47. which :
+48.watch :
+CUDA:
+module list
+which nvcc
+watch nvidia-smi
+nvcc "file_name.cu" -o "output_file_name"
+
+49.history -c : clears the history of commands
+50. sudo apt-get install "program name"/ sudo apt install "program, name"- install applications
+51. sudo remove "programName" - Uninstall a program
+52. tail -f /var/log/messages (or) sudo fdisk -l->get the list of devices mounted
+53. sudo umount /mnt/"devicename"  ->unmount the device
+54. write "username" "pts/ptsno" 
+"Message"	-> send message to a specific user
+get pts and ptsno from who command
+Go back to terminal keeping vim in background: ctrl+z
+type "fg" to go back to vim 
+55.nproc - No of CPUs in the System
+56.jupyter notebook: starts jupyter notebook in the present working directory
+
+
+Using GUI Linux remote access: ssh -X user@ip
+
+app commands:
+1.xterm
+2.libreoffice file.odt
+3.evince file.pdf / xdg-open file2open.pdf / gvfs-open file2open.pdf- pdf reader
+4.eog file.png - Image Reader
+5.virtualbox
+6.gedit - text_editor
+7.Firefox
+The way to "double-click" on a file from the command line is xdg-open. 
+
+############ For Python 3 ############
+# create virtual environment
+mkvirtualenv facecourse-py3 -p python3
+workon facecourse-py3
+
+
+Install .deb files
+56.You can install it using sudo dpkg -i /path/to/deb/file followed by sudo apt-get install -f.
+OR
+57.You can install it using sudo apt install ./name.deb (or sudo apt install /path/to/package/name.deb). 
+
+
+using graphics.h library to run computer graphics programs
+58. gcc demo.c -o demo -lgraph
+./demo
+
+
+SCP- secure copy protocol
+59. Copy file from local to Server: scp crc.pdf cse0031@172.27.0.27:~
+60. Copy folder from server to local : scp -r user@your.server.example.com:/path/to/foo /home/user/Desktop/
+
+61. go to home from anywhere in the terminal
+cd ~
+62. anaconda-navigator : Opens anaconda
+63. install .run file: cd /home/user/Downloads
+			sudo chmod +x some-app.run
+			sudo ./some-app.run
+64. xampp - sudo /opt/lampp/lampp start
+				  stop
+				  restart
+65. using dictionary dictd :  dict -d wn "dictionary"
+67. alias : create an alias to make easier the use of complexes commands. Example of use: alias "name_of_alias":"command"
+Search for a text in a file 
+68. grep - used to search for a string in a file. grep "String to check"  pathtofile/filename.extension
+69. zgrep - used to search for a sting in a zip file containing documents. zgrep "String to check"  pathtofile/filename.extension
+70. cat - used to display a text file in teminal - cat pathtofile/filename.extension
+71. less - used to display a text file in teminal along with features like scrolling from top to bottom of text and search for a string. less pathtofile/filename.extension
+
+

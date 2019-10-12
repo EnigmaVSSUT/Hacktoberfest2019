@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Les Formulaires</title>
+<link rel="stylesheet" type="text/css" href="formulaire.css" >
+<script src="formulaire.js"></script>
+</head>
+<body>
+        <h1 style="text-align: center"> FORMULAIRE </h1> 
+    <div>
+<form>
+    <label for="Nom" >Nom:</label>
+    <input type="text" name="Nom" id="Nom"><br><br>
+    <label for="Prenom" >Prenom:</label>
+    <input type="text" name="Prenom" id="Prenom"><br><br>
+    <label for="Age">Age:</label>
+    <input type="text" name="Age" id="Age"><br><br>
+    <label for="Sexe" >Sexe:</label><br>
+    <input type="radio" name="Sexe" id="Sexe">
+    <label for="homme" >Homme</label><br><br>
+    <input type="radio" name="Sexe" id="Sexe">
+    <label for="femme" >Femme</label><br><br>
+    <label for="Pseudo" >Pseudo:</label>
+    <input type="text" name="Pseudo" id="Pseudo"><br><br>
+    <label for="mdp" >Mot de Passe:</label>
+    <input type="password" name="mdp" id="mdp"><br><br>
+    <label for="mdp" >Mot de Passe(confirmation):</label>
+    <input type="password" name="mdp" id="mdp"><br><br>
+    <label for="Pays" >Pays:</label>
+    <select name="Pays">
+    <option value="none">Sélectionnez votre pays </option>
+    <option value="algerie">Algerie</option>
+    <option value="maroc">Maroc</option>
+    <option value="tunisie">Tunisie</option>
+    <option value="turquie">Turquie</option>
+    <option value="belgique">Belgique</option>
+    </select><br><br>
+    <label for="news" >J'accepte de recevoir des:</label><br><br>
+    <input name="news" type="checkbox" /> emails promotionnels<br /><br />
+    <input name="news" type="checkbox" /> emails basés sur mes données d'utilisation<br /><br />
+</form>
+</div>
+</body>
+</html> 

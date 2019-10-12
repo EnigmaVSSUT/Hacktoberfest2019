@@ -1,0 +1,22 @@
+Ubuntu general:
+	ctrl+alt+T : open terminal
+	shift+PrntScreen : take snip/ ScreenShot of specific part 				   of screen.
+
+Teminal:
+	ctrl+shift+c: copy
+	ctrl+shift+v: Paste
+	ctrl+l: clear terminal
+Bang Commands:
+	!!* : use arguments from previous command
+	!!: Repeat last command
+
+
+
+LibreOffice: 
+	CTRL + ] : increase font size
+	CTRL + [ : Decrease font size
+	f5 : slideshow from beginning
+	shift+f5: Slideshow from current slide
+Shotwell :
+	ctrl+o : crop
+	ctrl+shift+E : export

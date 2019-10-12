@@ -1,0 +1,170 @@
+<html>
+<canvas id ="gameCanvas" width = "1040" height = "600"></canvas>
+<Script type="text/javascript">
+var User;
+var canvas;
+var canvasContext;
+var framePerSec = 30;
+var ballX = 50;
+var ballSpeedX = 5;
+var ballY = 50;
+var ballSpeedY = 2;
+
+var paddle1Y = 250;
+var paddle2Y = 250;
+const PADDLE_HEIGHT = 100;
+const PADDLE_THICKNESS = 10;
+const WIN_SCORE =10;
+
+var player1Score = 0;
+var player2Score = 0;
+
+var showingWinScreen = false;
+window.onload = function(){
+    canvas = document.getElementById('gameCanvas');
+    canvasContext = canvas.getContext('2d');
+    setInterval(() => { moveEverything();drawEverything();},1000/framePerSec);
+
+        canvas.addEventListener('mousedown',(evt) => {player1Score=0;player2Score=0;showingWinScreen=false;});
+    	canvas.addEventListener('mousemove',
+		function(evt) {
+			var mousePos = calcMousePos(evt);
+			paddle1Y = mousePos.y - (PADDLE_HEIGHT/2);
+    });
+}
+    
+    function calcMousePos(evt){
+    var gameRect = canvas.getBoundingClientRect();
+    var documentRect = document.documentElement;
+    var mouseX = evt.clientX - gameRect.left - documentRect.scrollLeft;
+    var mouseY = evt.clientY - gameRect.top - documentRect.scrollTop;
+
+    return{
+        x:mouseX,
+        y:mouseY,
+         };
+}
+
+function computerMovement(){
+    var paddle2YCenter = paddle2Y + (PADDLE_HEIGHT/2);
+    if(ballY>(paddle2YCenter+35))
+    paddle2Y = paddle2Y + 10;
+    else if (ballY<(paddle2YCenter-35))
+    paddle2Y = paddle2Y - 10;
+}
+function moveEverything(){
+
+    if(showingWinScreen)
+    return;
+
+    computerMovement();
+
+     //The Vertical Part
+
+    ballY = ballY + ballSpeedY; 
+    if( ballY > canvas.height)
+        ballSpeedY = - ballSpeedY;
+    if(ballY < 0 )
+        ballSpeedY = -ballSpeedY;    
+
+    //The Horizontal Part 
+
+
+    ballX = ballX + ballSpeedX; 
+
+    if(ballX>canvas.width){
+        if(ballY>paddle2Y && ballY<paddle2Y+PADDLE_HEIGHT){
+            ballSpeedX = -ballSpeedX;
+
+            var deltaY = ballY-(paddle1Y+PADDLE_HEIGHT/2);
+            ballSpeedY = deltaY*0.25;
+        }
+        else{            
+            player1Score++;
+            ballReset();
+        }
+    }
+
+    if(ballX<0){
+        if(ballY>paddle1Y && ballY<paddle1Y+PADDLE_HEIGHT){
+            ballSpeedX = -ballSpeedX;
+            var deltaY = ballY-(paddle2Y+PADDLE_HEIGHT/2);
+            ballSpeedY = deltaY*0.25;
+        }
+        else{
+            player2Score++;
+            ballReset();
+        }
+    }
+ } 
+
+
+ function drawNet(){
+     for(var i =0;i<canvas.height;i+=40)
+     {
+         colorRect(canvas.width/2-1,i,2,20,'white');
+     }
+ }
+function drawEverything(){
+
+    //The Main Canvas
+    colorRect(0,0,canvas.width,canvas.height,'black');
+
+    if(showingWinScreen)
+    {
+        
+        
+        if(player1Score>=WIN_SCORE){
+            canvasContext.fillStyle = 'white';
+            canvasContext.fillText("Left player Won",350,200);
+        }
+        if(player2Score>=WIN_SCORE){
+            canvasContext.fillStyle = 'white';
+            canvasContext.fillText("Right player Won",350,200);
+        }
+        canvasContext.fillStyle = 'white';
+        canvasContext.fillText("click to continue",350,500);
+        return;
+    }
+   
+
+
+     //The Left Paddle
+    colorRect(0,paddle1Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
+    //The Right Paddle
+    colorRect(canvas.width-PADDLE_THICKNESS,paddle2Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
+     //The Ball
+    drawCircle();
+    drawNet();
+    canvasContext.fillStyle='white';
+    canvasContext.fillText("Made By Sourav Prasad",canvas.width-150,canvas.height-50);
+
+    canvasContext.fillText(player1Score,100,100);
+    canvasContext.fillText(player2Score,canvas.width-100,100);
+
+}
+function ballReset()
+{
+    if(player1Score>=WIN_SCORE || player2Score>=WIN_SCORE )
+    {
+        showingWinScreen = true;
+    }
+    ballSpeedX = -ballSpeedX;
+    ballX=canvas.width/2;
+    ballY=canvas.height/2;
+}
+function drawCircle(){
+    canvasContext.fillStyle = 'white';
+    canvasContext.beginPath();
+    canvasContext.arc(ballX,ballY,10,0,Math.PI*2,true);
+    canvasContext.fill();  
+
+}
+function colorRect(x,y,width,height,color){
+    canvasContext.fillStyle = color;
+    canvasContext.fillRect(x,y,width,height);
+}
+
+
+</Script>
+</html>

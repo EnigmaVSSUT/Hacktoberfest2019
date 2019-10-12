@@ -1,0 +1,78 @@
+body{
+    color: #5a5a5a
+}
+.navbar-wrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.carousel{
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+
+.carousel .carousel-item{
+    height: 500px;
+    background-color: #7777;
+}
+
+
+.carousel-inner > .carousel-item > img{
+    position: absolute;
+    height: 500px;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+
+.team .col-lg-4{
+    
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.team h2{
+    color: black;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.team p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.divider{
+    margin: 40 0;
+    
+}
+
+.content .wrt{
+    padding: 50px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+.content .col-md-5{
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.content{
+    margin-bottom: 20px;
+}
+
+.img-fluid{
+    height: 300;
+}
+.footer{
+    margin: 0 120px;
+}
+
