@@ -41,9 +41,9 @@ int main()
 
     for (c = 0; c < m; c++) {
       for (d = 0; d < q; d++)
-        printf("%d\t", multiply[c][d]);
+        printf("%d\t", multiply[c][d] , "\n");
 
-      printf("\n");
+      
     }
   }
 
