@@ -1,0 +1,16 @@
+{
+  "name": "ezerw/php-helpers",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Eze Rodriguez",
+      "email": "ezerwx@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}
