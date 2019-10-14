@@ -75,7 +75,7 @@ Go back to terminal keeping vim in background: ctrl+z
 type "fg" to go back to vim 
 55.nproc - No of CPUs in the System
 56.jupyter notebook: starts jupyter notebook in the present working directory
-
+57. create multiple folders with a single command, example: mkdir -p /tmp/{dev,qa,prod}/{src,backup}
 
 Using GUI Linux remote access: ssh -X user@ip
 

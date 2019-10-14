@@ -81,4 +81,6 @@
 79. [Ujjawal Jaiswal](https://github.com/ujjawaljaiswal2017)
 80. [Ankita Priya](https://github.com/AnkitaBIT)
 81. [Rishav Mishra](https://github.com/Rishav0809)
-82. [muskan077](https://github.com/muskan077)
+82. [Mohammad Wahyu Sanusi Putra](https://github.com/mwahyusp)
+83. [Doug Doies](https://github.com/deetoo)
+84. [muskan077](https://github.com/muskan077)
