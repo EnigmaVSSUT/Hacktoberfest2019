@@ -1,0 +1,16 @@
+	.blink{
+		width:200px;
+		height: 50px;
+	    background-color: magenta;
+		padding: 15px;	
+		text-align: center;
+		line-height: 50px;
+    color: red;
+    animation: blink 1s linear infinite;
+	}
+
+@keyframes blink{
+0%{background-color: #000;}
+50%{background-color: #fff;}
+100%{background-color: #000;}
+}
