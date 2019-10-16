@@ -6,7 +6,7 @@ Start your october with a bang !
 https://enigmavssut.github.io/Hacktoberfest2019/
 
 <h2>NOTE</h2>
-please push your PR's into your concerned Folders in the Repository.<br>
+please push your PR's into your <b>concerned Folders</b> in the Repository.<br>
 Help Us keep the Repo clean.<br> 
 
 <b>Keep Coding!<b>
