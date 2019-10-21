@@ -1,0 +1,16 @@
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+
+test_img = cv2.imread('vbgrp.jpg') #image location
+ti_gray = cv2.cvtColor(test_img, cv2.COLOR_BGR2GRAY)
+haar_cascade_face = cv2.CascadeClassifier(r'C:\Users\kajal\Downloads\opencv\sources\data\haarcascades\haarcascade_frontalface_default.xml')
+#haar_cascade_face = cv2.CascadeClassifier(r'C:\Users\kajal\Downloads\opencv\sources\data\lbpcascades\lbpcascade_silverware.xml')
+faces_rects = haar_cascade_face.detectMultiScale(ti_gray, scaleFactor = 1.2, minNeighbors = 1);
+print('Faces found: ', len(faces_rects))
+
+for (x,y,w,h) in faces_rects:
+     cv2.rectangle(test_img, (x, y), (x+w, y+h), (0, 255, 0), 2)
+img = cv2.cvtColor(test_img, cv2.COLOR_BGR2RGB)
+plt.imshow(img)
+plt.show()
