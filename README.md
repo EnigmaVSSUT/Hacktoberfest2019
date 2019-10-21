@@ -8,7 +8,7 @@ https://enigmavssut.github.io/Hacktoberfest2019/
 <h2>NOTE</h2>
 
 please push your PR's into your <b>concerned Folders</b> in the Repository.<br>
-
+Pull requests here won’t count toward Hacktoberfest.
 Help Us keep the Repo clean!<br> 
 
 <b>Keep Coding!<b>
